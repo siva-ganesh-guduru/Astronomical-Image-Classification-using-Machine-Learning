@@ -1,8 +1,9 @@
-![image](https://github.com/siva-ganesh-guduru/Astronomical-Image-Classification-using-Machine-Learning/assets/85402457/db4f51e2-2988-4ffe-9002-1a6d5d0e3052)# Astronomical-Image-Classification-using-Machine-Learning
+(https://github.com/siva-ganesh-guduru/Astronomical-Image-Classification-using-Machine-Learning/assets/85402457/db4f51e2-2988-4ffe-9002-1a6d5d0e3052)# Astronomical-Image-Classification-using-Machine-Learning
 This  is my Final year college B.tech Project
 Contents • Abstract • Introduction • Problem Statement • Motivation • Objectives • Literature Survey • Limitations of existing methods • Physical model • Proposed algorithms • Software and Hardware requirements • Simulation model • Performance Evaluation • Analysis of Experimental Data
 
 Abstract
+
 Universe is a vast area of research that requires intensive investigation. Among millions of galaxies, finding out
 whether the object is a planet, meteoroid, or some unusual stellar object gives greater insight into space research.
 Astronomical image classification with machine learning means using computer programs to look at lots of
@@ -13,6 +14,7 @@ we are using is taken from a survey for NEOs by Lori Allen and collaborators usi
 Telescope at CTIO. The data comprise a stack of images taken over a period of 5 nights.
 
 Introduction
+
 • Astronomical Image Classification with Machine Learning is like a mysterious telescope for researchers.
 Particularly our work includes classification of point source images.
 • First, we collect images categorized into two sets point source images and noise. Images are normalized to
@@ -24,12 +26,14 @@ instructing our enchantment programs and work along with space specialists to fo
 it right.
 
 Problem statement
+
 Dataset from a survey for NEOs by Lori Allen and collaborators using DECam on the Blanco 4m Telescope at
 CTIO is categorized into point source images and noise. The task is to identify the best classification algorithm
 and to make the predictions on the validation data set. The term point source generally means an observed
 astronomical object that focuses as a point, it is a single identifiable localized source in the space.
 
 Motivation
+
 The motivations for our project align with the broader goals of applying machine learning to astronomical image
 classification:
 • Automating tedious tasks: Manually classifying numerous astronomical images is time-consuming and errorprone. Our project can contribute to automating this process, freeing up (astronomers, researchers, and anyone
@@ -41,6 +45,7 @@ unlocked by unlocking the secrets hidden within these cosmic snapshots!
 classify images much faster than humans, especially when dealing with large datasets
 
 Objectives
+
 1. To develop a robust system for classifying astronomical objects within large images.
 2. To achieve a high precision rate and enhanced F1 score in the classification of astronomical objects, ensuring
 accurate identification and categorization.
@@ -52,6 +57,7 @@ classifier, Decision tree classifier, and GMMBayes on astronomical images.
 5. To address the issue of imbalanced datasets, which is common in astronomical data.
 
 Literature Survey[cont.,]
+
 1) Automatic classification of galaxy morphology: A rotationally-invariant supervised machine-learning
 method based on the unsupervised machine-learning data set. GW Fang, S Ba, Y Gu, Z Lin, Y Hou, C
 Qin, C Zhou, J Xu, Y Dai, J Song, X Kong. The Astronomical Journal, 2023•iopscience.iop.org
@@ -65,6 +71,7 @@ Limitations: There is a lack of discussion on potential biases in the dataset or
 raising concerns about the method's applicability to diverse astronomical scenarios.
 
 Literature Survey
+
 2) An Efficient Object Detection Method For Large CCD Astronomical Images. Jingchang Pan;Caiming
 Zhang 2009 2nd International Congress on Image and Signal ProcessingYear: 2009 | Conference Paper |
 Publisher: IEEE.
@@ -77,6 +84,7 @@ Limitations: The paper mainly focuses on star detection in CCD images. Limitatio
 identifying other celestial bodies, like galaxies or asteroids, are not explicitly addressed.
 
 Literature Survey[cont.,]
+
 3) Resolving the celestial classification using fine k-NN classifier. Sangeeta Yadav;Amandeep Kaur;Neeraj
 Singh Bhauryal. 2016 Fourth International Conference on Parallel, Distributed and Grid Computing
 (PDGC)Year: 2016 | Conference Paper | Publisher: IEEE
@@ -90,6 +98,7 @@ Limitations: While the paper focuses on classifying planets, it may not address 
 objects, limiting the applicability of the proposed technique to other types of space data.
 
 Literature Survey[cont.,]
+
 4) Neural nets and star/galaxy separation in wide field astronomical images. S. Andreon;G. Gargiulo;G.
 Longo;R. Tagliaferri;N. Capuano. IJCNN'99. International Joint Conference on Neural Networks.
 Proceedings (Cat. No.99CH36339)Year: 1999 | Conference Paper | Publisher: IEEE
@@ -102,6 +111,7 @@ Limitations: It focuses mainly on experimental results related to object detecti
 star/galaxy separation. This might limit the comprehensive evaluation of the neural network's capabilities..
 
 Literature Survey[cont.,]
+
 5) Self-supervised Learning for Astronomical Image Classification. Ana Martinazzo;Mateus
 Espadoto;Nina S. T. Hirata. 2020 25th International Conference on Pattern Recognition
 (ICPR)Year: 2021 | Conference Paper | Publisher: IEEE
@@ -115,6 +125,7 @@ on specific metrics used for comparison, making it important to understand the n
 evaluation.
 
 Literature Survey[cont.,]
+
 6) CzSL: Learning from citizen science, experts, and unlabelled data in astronomical image classification.
 M Jiménez Morales, EJ Alfaro, M Torres Torres - 2023 - digibug.ugr.es
 • This paper addresses the challenges and opportunities presented by citizen science in the context of
@@ -128,6 +139,7 @@ participants, but the extent to which this impacts classification accuracy and r
 explored.
 
 Limitations of exiting methods
+
 Here are some key limitations of existing methods that our project could address:
 • Rotation invariance: One of the existing methods lacks rotation invariance, leading to inconsistencies in
 classifying rotated galaxy images.
@@ -138,6 +150,7 @@ broader range of celestial bodies.
 metrics used.
 
 Proposed algorithms
+
 • K-nearest Neighbours (KNN): It classifies the data point on how its neighbour is classified. KNN classifies
 the new data points based on the similarity measure of the earlier stored points.
 • Linear Discriminant Analysis (LDA): The primary goal of LDA is to find the linear combinations of
@@ -153,69 +166,96 @@ bounding boxes and class probabilities all at once. It detects multiple objects 
 the image into an S x S grid, with each grid cell responsible for detecting objects whose centers fall within it.
 
 Software and hardware requirements:
+
 Software requirements:
+
 • Language:python 3.6 or higher specifiations
 • Packages: Numpy, sklearn ,matplotlib,astroML
 • Operating Systems: windows 10
+
 Hardware requirements:
+
 • Ram minimum 4gb
 • Hard disc or ssd : abov e 500 gb
 
 
 Performance Evaluation
+
 • KNN classifier:
+
 Accuracy: 0.8285779502396713
 Classification Report:
 precision recall f1-score support
 0 0.81 0.90 0.85 11996
 1 0.86 0.75 0.80 9909
+
 Confusion Matrix:
+
 [[10747 1249]
 [ 2506 7403]]
 
 • Linear Discriminant Analysis (LDA) :
+
 Accuracy: 0.8931294225062771
+
 Classification Report:
+
 precision recall f1-score support
 0 0.91 0.89 0.90 11996
 1 0.87 0.89 0.88 9909
+
 Confusion Matrix:
+
 [[10715 1281]
 [ 1060 8849]]
 
 Performance Evaluation
+
 • Quadratic Discriminant Analysis (QDA) :
+
 Accuracy: 0.6806208628167085
+
 Classification Report:
+
 precision recall f1-score support
 0 0.63 1.00 0.77 11996
 1 1.00 0.29 0.45 9909
+
 Confusion Matrix:
+
 [[11995 1]
 [ 6995 2914]]
 
 • Convolutional neural network (CNN) :
+
 Accuracy: 0.9775
 Classification Report:
 precision recall f1-score support
 0.0 0.97 0.99 0.98 12000
 1.0 0.99 0.96 0.97 9905
+
 Confusion Matrix:
+
 [[11893 107]
 [ 386 9519]]
 
 Performance Evaluation
+
 • You Only Look Once (YOLO):
+
 Accuracy: 0.9860762357711792
 Classification Report:
 precision recall f1-score support
 0 0.99 0.99 0.99 12023
 1 0.98 0.99 0.98 9882
+
 Confusion Matrix:
+
 [[11139 857]
 [ 234 9675]]
 
 Analysis of Experimental Data
+
 The training sample includes images of simulated TNOs (true positives; stamps_sources.npz) and random
 trajectories where there is no known source (false positives; stamps_noise.npz). The true positives range in
 signal-to-noise from 100 to 3.
